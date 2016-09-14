@@ -6,8 +6,19 @@ public class Song {
 	private String caption;
 	private String lyricUrl;
 	private String fullLyric;
+	private String author;
 	private Volume volume;
 	private String tags;
+
+	public Song() {}
+	
+	public Song(String number, String name, String caption, String author) {
+		super();
+		this.number = number;
+		this.name = name;
+		this.caption = caption;
+		this.author = author;
+	}
 
 	public String getNumber() {
 		return number;
@@ -63,6 +74,14 @@ public class Song {
 
 	public void setTags(String tags) {
 		this.tags = tags;
+	}
+
+	public String getAuthor() {
+		return author;
+	}
+
+	public void setAuthor(String author) {
+		this.author = author;
 	}
 
 }
